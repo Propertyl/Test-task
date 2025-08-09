@@ -1,0 +1,87 @@
+:root {
+  font-size: 18px;
+  min-height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg-color:41,41,41;
+  --text-color:255,255,255;
+  --main-color:87,76,252;
+  --default-border:.2rem solid rgb(var(--main-color));
+  background-color:rgb(var(--bg-color));
+}
+
+@font-face {
+  font-family:'Default';
+  src: url('/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: 'Default';
+  color:rgb(var(--text-color));
+}
+
+*::after,::before {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: inherit;
+}
+
+.centered-elements {
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media only screen and (min-width:1921px) and (max-width:2000px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width:2001px) and (max-width:2440px) {
+  :root {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width:2441px) and (max-width:2840px) {
+  :root {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width:1550px) {
+  :root {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width:1440px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:1220px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+

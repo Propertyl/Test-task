@@ -1,0 +1,53 @@
+.crew-info-section {
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.crew-info {
+  height: 90%;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: overlay;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.212) #bbda5500;
+  border: var(--default-border);
+}
+
+.crew-info-section:hover .crew-count {
+  transform: translateY(0);
+}
+
+.crew-member {
+  width:100%;
+  align-items: center;
+  padding:1.2rem;
+  height:auto;
+  transition: all .2s ease-out;
+}
+
+.crew-member-icon {
+  height:2rem;
+  margin: 0 1rem;
+  fill:rgb(var(--text-color));
+}
+
+
+.crew-member:hover {
+  background-color: rgb(var(--main-color));
+}
+
+.crew-count {
+  margin-top:1rem;
+  height: 7%;
+  border-radius:40px;
+  transition: all .2s ease-out;
+  transform: translateY(200%);
+  border: var(--default-border);
+}
+
+@media only screen and (max-width:479px) {
+  .crew-count {
+    min-height: 3rem;
+  }
+}
